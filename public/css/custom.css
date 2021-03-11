@@ -1,0 +1,188 @@
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+
+  .services {
+    border: 1px dotted;
+    padding: 9px;
+    margin-bottom: 16px;
+}
+
+/*update css*/
+
+.services {
+  border: 1px dotted;
+  padding: 9px;
+  min-height: 500px;
+  margin-bottom: 16px;
+}
+
+.services h4 span {
+  color: #333333  !important;
+  font-size: 22px;
+  border-bottom: 2px solid #10b9b9;
+  padding: 0 10px 10px 10px;
+  font-weight: 700;
+}
+
+.services  h4 {
+  text-align: center;
+}
+
+.services {
+  box-shadow: 0 0 10px #00000059;
+  border: 1px solid #4543443d;
+}
+
+.services p {
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+.services p span {
+  background: #454344;
+   color: white !important; 
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 10px 15px;
+
+  
+  font-weight: 400;
+}
+
+p.main-price {
+  font-size: 20px;
+  color: #337ab7;
+  font-weight: 700;
+}
+
+.social a img {
+  max-width: 35px;
+  border-radius: 200px;
+  padding: 4px 4px;
+  margin: 10px 5px;
+  background: #ffffff;
+}
+
+
+
+.social {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+}
+.contacts a img {max-width: 25px;}
+
+.contacts {
+    display: flex;
+    flex-flow: column;
+}
+
+.contacts a {
+    display: inherit;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.contacts a img {
+    margin-right: 20px;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section.about-us {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #efefef;
+}
+
+.about-content {
+  margin: 10px 0;
+}
+
+.about-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #10b9b9;
+  padding-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 400;
+}
