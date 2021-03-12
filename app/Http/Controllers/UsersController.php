@@ -31,6 +31,7 @@ class UsersController extends Controller
 
     public function update_user(Request $request, $id)
     {
+        $imageName = null;
         if($request->has('photo')){
             $imageName = "IMG_" . rand(10000000000, 9999999999999) . '.' . $request->photo->extension();
             $request->photo->move(public_path('images'), $imageName);
@@ -39,6 +40,7 @@ class UsersController extends Controller
         $user = User::find($id);
         $user->name = $request->name;
         $user->email = $request->email;
+
         $user->image = $imageName == null ? null : $imageName;
         $user->save();
         return redirect()->back();
