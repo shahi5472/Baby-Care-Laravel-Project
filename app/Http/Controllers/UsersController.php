@@ -40,8 +40,7 @@ class UsersController extends Controller
         $user = User::find($id);
         $user->name = $request->name;
         $user->email = $request->email;
-
-        $user->image = $imageName == null ? null : $imageName;
+        $user->image = $imageName == null ? $user->image : $imageName;
         $user->save();
         return redirect()->back();
     }
