@@ -23,7 +23,7 @@
               </thead>
               <tbody>
                 @php
-                    $i = 1;
+                    $i = 1 ;
                 @endphp
 
                 @foreach ($data as $item)
@@ -32,7 +32,7 @@
                     <td>{{$item->name}}</td>
                     <td>{{$item->phone}}</td>
                     <td>{{$item->date}}</td>
-                    <td>{{$item->package['name']}}</td>
+                    <td>{{$item->package == null ? 'Not Found' : $item->package['name']}}</td>
                     <td>{{$item->payable}}</td>
                     <td>{{$item->paid}}</td>
                     <td><p class="{{$item->payment_status == 'unpaid' ? 'bg-danger' : 'bg-success'}} p-1">{{$item->payment_status}}</p></td>

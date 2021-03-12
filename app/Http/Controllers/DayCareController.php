@@ -14,8 +14,8 @@ class DayCareController extends Controller
         return view('admin.book.all_booking_list',compact('data'));
     }
     public function approved(){
-        $data= BookDaycare::where('isApprove','YES')->get();
-        // dd($data,'a');
+        $data= BookDaycare::where('isApprove','YES')->with(['package'])->get();
+        // dd($data->toArray()->package);
         return view('admin.book.approved-list',compact('data'));
     }
 
